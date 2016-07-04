@@ -352,6 +352,18 @@
     <Filter Include="Drivers\windows">
       <UniqueIdentifier>{8e7d19b5-bb30-4faf-a46d-5afa722859c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Drivers\builtin_zlib\zlib">
+      <UniqueIdentifier>{4f85785c-82c8-4b9a-9aa7-05c59bec25c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\gles2\shaders">
+      <UniqueIdentifier>{e1f367bb-adbb-46ff-bbe5-81d1232b8e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\gl_context\GL">
+      <UniqueIdentifier>{857da281-9857-4e24-acdf-8a631172fa10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\png\arm">
+      <UniqueIdentifier>{82ce8a28-ebe3-4ca7-aa62-8958b6619ffa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\main\input_default.cpp">
@@ -2003,6 +2015,255 @@
     </ClCompile>
     <ClCompile Include="..\drivers\register_driver_types.cpp">
       <Filter>Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\alsa\audio_driver_alsa.cpp">
+      <Filter>Drivers\alsa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\adler32.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\compress.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\crc32.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\deflate.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\infback.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\inffast.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\inflate.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\inftrees.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\trees.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\uncompr.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\builtin_zlib\zlib\zutil.c">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_envelope.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_instrument.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_it.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_it_info.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_it_instruments.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_it_patterns.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_it_samples.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_mod.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_s3m.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_loader_xm.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_pattern.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_control.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_effects.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_envelopes.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_events.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_filter.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_nna.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_notes.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_player_data_utils.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_sample.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_sample_manager.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_song.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\cp_tables.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\chibi\event_stream_chibi.cpp">
+      <Filter>Drivers\chibi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\etc1\image_etc.cpp">
+      <Filter>Drivers\etc1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\etc1\rg_etc1.cpp">
+      <Filter>Drivers\etc1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\etc1\texture_loader_pkm.cpp">
+      <Filter>Drivers\etc1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\dds\texture_loader_dds.cpp">
+      <Filter>Drivers\dds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\gles2\rasterizer_gles2.cpp">
+      <Filter>Drivers\gles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\gles2\rasterizer_instance_gles2.cpp">
+      <Filter>Drivers\gles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\gles2\shader_compiler_gles2.cpp">
+      <Filter>Drivers\gles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\gles2\shader_gles2.cpp">
+      <Filter>Drivers\gles2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\gl_context\context_gl.cpp">
+      <Filter>Drivers\gl_context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\gl_context\glew.c">
+      <Filter>Drivers\gl_context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pvr\BitScale.cpp">
+      <Filter>Drivers\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pvr\MortonTable.cpp">
+      <Filter>Drivers\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pvr\PvrTcDecoder.cpp">
+      <Filter>Drivers\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pvr\PvrTcEncoder.cpp">
+      <Filter>Drivers\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pvr\PvrTcPacket.cpp">
+      <Filter>Drivers\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pvr\texture_loader_pvr.cpp">
+      <Filter>Drivers\pvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\image_loader_png.cpp">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\png.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngerror.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngget.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngmem.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngpread.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngread.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngrio.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngrtran.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngrutil.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngset.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngtrans.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngwio.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngwrite.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngwtran.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\pngwutil.c">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\resource_saver_png.cpp">
+      <Filter>Drivers\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\arm\arm_init.c">
+      <Filter>Drivers\png\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\png\arm\filter_neon_intrinsics.c">
+      <Filter>Drivers\png\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\jpegd\image_loader_jpegd.cpp">
+      <Filter>Drivers\jpegd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\jpegd\jpgd.cpp">
+      <Filter>Drivers\jpegd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\windows\dir_access_windows.cpp">
+      <Filter>Drivers\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\windows\file_access_windows.cpp">
+      <Filter>Drivers\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\windows\mutex_windows.cpp">
+      <Filter>Drivers\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\windows\semaphore_windows.cpp">
+      <Filter>Drivers\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\windows\shell_windows.cpp">
+      <Filter>Drivers\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\windows\thread_windows.cpp">
+      <Filter>Drivers\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\nedmalloc\memory_pool_static_nedmalloc.cpp">
+      <Filter>Drivers\nedmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\nedmalloc\nedmalloc.cpp">
+      <Filter>Drivers\nedmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\pnm\bitmap_loader_pnm.cpp">
+      <Filter>Drivers\pnm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -3731,6 +3992,243 @@
     <ClInclude Include="..\drivers\register_driver_types.h">
       <Filter>Drivers</Filter>
     </ClInclude>
+    <ClInclude Include="..\drivers\alsa\audio_driver_alsa.h">
+      <Filter>Drivers\alsa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\crc32.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\deflate.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\inffast.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\inffixed.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\inflate.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\inftrees.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\trees.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\zconf.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\zconf.in.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\zlib.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\builtin_zlib\zlib\zutil.h">
+      <Filter>Drivers\builtin_zlib\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_config.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_envelope.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_file_access_wrapper.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_instrument.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_loader.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_loader_it.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_loader_mod.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_loader_s3m.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_loader_xm.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_mixer.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_note.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_order.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_pattern.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_player_data.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_sample.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_sample_defs.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_sample_manager.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_song.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\cp_tables.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\chibi\event_stream_chibi.h">
+      <Filter>Drivers\chibi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\etc1\image_etc.h">
+      <Filter>Drivers\etc1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\etc1\rg_etc1.h">
+      <Filter>Drivers\etc1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\etc1\texture_loader_pkm.h">
+      <Filter>Drivers\etc1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\dds\texture_loader_dds.h">
+      <Filter>Drivers\dds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gles2\rasterizer_gles2.h">
+      <Filter>Drivers\gles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gles2\rasterizer_instance_gles2.h">
+      <Filter>Drivers\gles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gles2\shader_compiler_gles2.h">
+      <Filter>Drivers\gles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gles2\shader_gles2.h">
+      <Filter>Drivers\gles2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gl_context\context_gl.h">
+      <Filter>Drivers\gl_context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gl_context\GL\glew.h">
+      <Filter>Drivers\gl_context\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gl_context\GL\glxew.h">
+      <Filter>Drivers\gl_context\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\gl_context\GL\wglew.h">
+      <Filter>Drivers\gl_context\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\AlphaBitmap.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\Bitmap.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\BitScale.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\BitUtility.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\ColorRgba.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\Interval.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\MortonTable.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\Point2.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\PvrTcDecoder.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\PvrTcEncoder.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\PvrTcPacket.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\RgbaBitmap.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\RgbBitmap.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pvr\texture_loader_pvr.h">
+      <Filter>Drivers\pvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\image_loader_png.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\png.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\pngconf.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\pngdebug.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\pnginfo.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\pnglibconf.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\pngpriv.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\pngstruct.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\png\resource_saver_png.h">
+      <Filter>Drivers\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\jpegd\image_loader_jpegd.h">
+      <Filter>Drivers\jpegd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\jpegd\jpgd.h">
+      <Filter>Drivers\jpegd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\windows\dir_access_windows.h">
+      <Filter>Drivers\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\windows\file_access_windows.h">
+      <Filter>Drivers\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\windows\mutex_windows.h">
+      <Filter>Drivers\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\windows\semaphore_windows.h">
+      <Filter>Drivers\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\windows\shell_windows.h">
+      <Filter>Drivers\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\windows\thread_windows.h">
+      <Filter>Drivers\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\nedmalloc\malloc.c.h">
+      <Filter>Drivers\nedmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\nedmalloc\memory_pool_static_nedmalloc.h">
+      <Filter>Drivers\nedmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\nedmalloc\nedmalloc.h">
+      <Filter>Drivers\nedmalloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\pnm\bitmap_loader_pnm.h">
+      <Filter>Drivers\pnm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\main\SCsub">
@@ -5338,6 +5836,66 @@
     <None Include="..\drivers\SCsub">
       <Filter>Drivers</Filter>
     </None>
+    <None Include="..\drivers\alsa\SCsub">
+      <Filter>Drivers\alsa</Filter>
+    </None>
+    <None Include="..\drivers\builtin_zlib\SCsub">
+      <Filter>Drivers\builtin_zlib</Filter>
+    </None>
+    <None Include="..\drivers\chibi\SCsub">
+      <Filter>Drivers\chibi</Filter>
+    </None>
+    <None Include="..\drivers\etc1\SCsub">
+      <Filter>Drivers\etc1</Filter>
+    </None>
+    <None Include="..\drivers\dds\SCsub">
+      <Filter>Drivers\dds</Filter>
+    </None>
+    <None Include="..\drivers\gles2\SCsub">
+      <Filter>Drivers\gles2</Filter>
+    </None>
+    <None Include="..\drivers\gles2\shaders\blur.glsl">
+      <Filter>Drivers\gles2\shaders</Filter>
+    </None>
+    <None Include="..\drivers\gles2\shaders\canvas.glsl">
+      <Filter>Drivers\gles2\shaders</Filter>
+    </None>
+    <None Include="..\drivers\gles2\shaders\canvas_shadow.glsl">
+      <Filter>Drivers\gles2\shaders</Filter>
+    </None>
+    <None Include="..\drivers\gles2\shaders\copy.glsl">
+      <Filter>Drivers\gles2\shaders</Filter>
+    </None>
+    <None Include="..\drivers\gles2\shaders\material.glsl">
+      <Filter>Drivers\gles2\shaders</Filter>
+    </None>
+    <None Include="..\drivers\gles2\shaders\SCsub">
+      <Filter>Drivers\gles2\shaders</Filter>
+    </None>
+    <None Include="..\drivers\gl_context\SCsub">
+      <Filter>Drivers\gl_context</Filter>
+    </None>
+    <None Include="..\drivers\pvr\SCsub">
+      <Filter>Drivers\pvr</Filter>
+    </None>
+    <None Include="..\drivers\png\SCsub">
+      <Filter>Drivers\png</Filter>
+    </None>
+    <None Include="..\drivers\png\arm\filter_neon.S">
+      <Filter>Drivers\png\arm</Filter>
+    </None>
+    <None Include="..\drivers\jpegd\SCsub">
+      <Filter>Drivers\jpegd</Filter>
+    </None>
+    <None Include="..\drivers\windows\SCsub">
+      <Filter>Drivers\windows</Filter>
+    </None>
+    <None Include="..\drivers\nedmalloc\SCsub">
+      <Filter>Drivers\nedmalloc</Filter>
+    </None>
+    <None Include="..\drivers\pnm\SCsub">
+      <Filter>Drivers\pnm</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\core\io\LICENSE-InfoZip.txt">
@@ -5348,6 +5906,12 @@
     </Text>
     <Text Include="..\tools\addheader\header.txt">
       <Filter>Tools\AddHeader</Filter>
+    </Text>
+    <Text Include="..\drivers\nedmalloc\License.txt">
+      <Filter>Drivers\nedmalloc</Filter>
+    </Text>
+    <Text Include="..\drivers\nedmalloc\Readme.txt">
+      <Filter>Drivers\nedmalloc</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
