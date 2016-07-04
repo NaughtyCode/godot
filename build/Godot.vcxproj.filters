@@ -310,9 +310,6 @@
     <Filter Include="Drivers\openssl">
       <UniqueIdentifier>{839bfdac-f4a7-412c-b9a6-9a798e29a852}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Drivers\opus">
-      <UniqueIdentifier>{5179c924-372d-4bd9-a3fb-4a76bd7a3b18}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Drivers\png">
       <UniqueIdentifier>{bb551bbd-3448-49a5-98b1-7bb29f9421a0}</UniqueIdentifier>
     </Filter>
@@ -363,6 +360,9 @@
     </Filter>
     <Filter Include="Drivers\png\arm">
       <UniqueIdentifier>{82ce8a28-ebe3-4ca7-aa62-8958b6619ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\opus">
+      <UniqueIdentifier>{4236f084-ab30-4c02-bfe5-1ce4278c0aec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -2264,6 +2264,54 @@
     </ClCompile>
     <ClCompile Include="..\drivers\pnm\bitmap_loader_pnm.cpp">
       <Filter>Drivers\pnm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\ogg\bitwise.c">
+      <Filter>Drivers\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\ogg\framing.c">
+      <Filter>Drivers\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\audio_stream_mpc.cpp">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\huffman.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\mpc_bits_reader.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\mpc_decoder.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\mpc_demux.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\mpc_reader.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\requant.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\streaminfo.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\mpc\synth_filter.c">
+      <Filter>Drivers\mpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\convex_decomp\b2d_decompose.cpp">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\convex_decomp\b2Polygon.cpp">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\convex_decomp\b2Triangle.cpp">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\rtaudio\audio_driver_rtaudio.cpp">
+      <Filter>Drivers\rtaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\drivers\rtaudio\RtAudio.cpp">
+      <Filter>Drivers\rtaudio</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -4229,6 +4277,78 @@
     <ClInclude Include="..\drivers\pnm\bitmap_loader_pnm.h">
       <Filter>Drivers\pnm</Filter>
     </ClInclude>
+    <ClInclude Include="..\drivers\ogg\config_types.h">
+      <Filter>Drivers\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\ogg\ogg.h">
+      <Filter>Drivers\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\ogg\os_types.h">
+      <Filter>Drivers\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\audio_stream_mpc.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\datatypes.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\decoder.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\huffman.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\internal.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\minimax.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\mpc_bits_reader.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\mpc_types.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\mpcdec.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\mpcdec_math.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\mpcmath.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\reader.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\requant.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\mpc\streaminfo.h">
+      <Filter>Drivers\mpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\convex_decomp\b2d_decompose.h">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\convex_decomp\b2Glue.h">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\convex_decomp\b2Polygon.h">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\convex_decomp\b2Triangle.h">
+      <Filter>Drivers\convex_decomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\rtaudio\audio_driver_rtaudio.h">
+      <Filter>Drivers\rtaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\rtaudio\RtAudio.h">
+      <Filter>Drivers\rtaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\drivers\rtaudio\RtError.h">
+      <Filter>Drivers\rtaudio</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\main\SCsub">
@@ -5895,6 +6015,36 @@
     </None>
     <None Include="..\drivers\pnm\SCsub">
       <Filter>Drivers\pnm</Filter>
+    </None>
+    <None Include="..\drivers\ogg\COPYING">
+      <Filter>Drivers\ogg</Filter>
+    </None>
+    <None Include="..\drivers\ogg\SCsub">
+      <Filter>Drivers\ogg</Filter>
+    </None>
+    <None Include="..\drivers\mpc\SCsub">
+      <Filter>Drivers\mpc</Filter>
+    </None>
+    <None Include="..\drivers\convex_decomp\SCsub">
+      <Filter>Drivers\convex_decomp</Filter>
+    </None>
+    <None Include="..\drivers\rtaudio\SCsub">
+      <Filter>Drivers\rtaudio</Filter>
+    </None>
+    <None Include="..\tools\certs\ca-certificates.crt">
+      <Filter>Tools\Certs</Filter>
+    </None>
+    <None Include="..\tools\steam\make_icons.sh">
+      <Filter>Tools\steam</Filter>
+    </None>
+    <None Include="..\tools\glwrapper\makewrapper.py">
+      <Filter>Tools\GLWrapper</Filter>
+    </None>
+    <None Include="..\tools\html_fs\godot.html">
+      <Filter>Tools\HtmlFS</Filter>
+    </None>
+    <None Include="..\tools\html_fs\godotfs.js">
+      <Filter>Tools\HtmlFS</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -9378,5 +9528,28 @@
     <ResourceCompile Include="..\platform\windows\godot_res.rc">
       <Filter>Platform\Windows</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\tools\editor_fonts\DroidSans.ttf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
+    <Font Include="..\tools\editor_fonts\DroidSansArabic.ttf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
+    <Font Include="..\tools\editor_fonts\DroidSansFallback.ttf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
+    <Font Include="..\tools\editor_fonts\DroidSansHebrew.ttf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
+    <Font Include="..\tools\editor_fonts\DroidSansJapanese.ttf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
+    <Font Include="..\tools\editor_fonts\DroidSansThai.ttf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
+    <Font Include="..\tools\editor_fonts\source_code_pro.otf">
+      <Filter>Tools\EditorFonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>

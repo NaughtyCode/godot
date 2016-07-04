@@ -300,6 +300,9 @@
     <ClCompile Include="..\drivers\chibi\cp_song.cpp" />
     <ClCompile Include="..\drivers\chibi\cp_tables.cpp" />
     <ClCompile Include="..\drivers\chibi\event_stream_chibi.cpp" />
+    <ClCompile Include="..\drivers\convex_decomp\b2d_decompose.cpp" />
+    <ClCompile Include="..\drivers\convex_decomp\b2Polygon.cpp" />
+    <ClCompile Include="..\drivers\convex_decomp\b2Triangle.cpp" />
     <ClCompile Include="..\drivers\dds\texture_loader_dds.cpp" />
     <ClCompile Include="..\drivers\etc1\image_etc.cpp" />
     <ClCompile Include="..\drivers\etc1\rg_etc1.cpp" />
@@ -312,8 +315,19 @@
     <ClCompile Include="..\drivers\gl_context\glew.c" />
     <ClCompile Include="..\drivers\jpegd\image_loader_jpegd.cpp" />
     <ClCompile Include="..\drivers\jpegd\jpgd.cpp" />
+    <ClCompile Include="..\drivers\mpc\audio_stream_mpc.cpp" />
+    <ClCompile Include="..\drivers\mpc\huffman.c" />
+    <ClCompile Include="..\drivers\mpc\mpc_bits_reader.c" />
+    <ClCompile Include="..\drivers\mpc\mpc_decoder.c" />
+    <ClCompile Include="..\drivers\mpc\mpc_demux.c" />
+    <ClCompile Include="..\drivers\mpc\mpc_reader.c" />
+    <ClCompile Include="..\drivers\mpc\requant.c" />
+    <ClCompile Include="..\drivers\mpc\streaminfo.c" />
+    <ClCompile Include="..\drivers\mpc\synth_filter.c" />
     <ClCompile Include="..\drivers\nedmalloc\memory_pool_static_nedmalloc.cpp" />
     <ClCompile Include="..\drivers\nedmalloc\nedmalloc.cpp" />
+    <ClCompile Include="..\drivers\ogg\bitwise.c" />
+    <ClCompile Include="..\drivers\ogg\framing.c" />
     <ClCompile Include="..\drivers\png\arm\arm_init.c" />
     <ClCompile Include="..\drivers\png\arm\filter_neon_intrinsics.c" />
     <ClCompile Include="..\drivers\png\image_loader_png.cpp" />
@@ -341,6 +355,8 @@
     <ClCompile Include="..\drivers\pvr\PvrTcPacket.cpp" />
     <ClCompile Include="..\drivers\pvr\texture_loader_pvr.cpp" />
     <ClCompile Include="..\drivers\register_driver_types.cpp" />
+    <ClCompile Include="..\drivers\rtaudio\audio_driver_rtaudio.cpp" />
+    <ClCompile Include="..\drivers\rtaudio\RtAudio.cpp" />
     <ClCompile Include="..\drivers\windows\dir_access_windows.cpp" />
     <ClCompile Include="..\drivers\windows\file_access_windows.cpp" />
     <ClCompile Include="..\drivers\windows\mutex_windows.cpp" />
@@ -951,6 +967,10 @@
     <ClInclude Include="..\drivers\chibi\cp_song.h" />
     <ClInclude Include="..\drivers\chibi\cp_tables.h" />
     <ClInclude Include="..\drivers\chibi\event_stream_chibi.h" />
+    <ClInclude Include="..\drivers\convex_decomp\b2d_decompose.h" />
+    <ClInclude Include="..\drivers\convex_decomp\b2Glue.h" />
+    <ClInclude Include="..\drivers\convex_decomp\b2Polygon.h" />
+    <ClInclude Include="..\drivers\convex_decomp\b2Triangle.h" />
     <ClInclude Include="..\drivers\dds\texture_loader_dds.h" />
     <ClInclude Include="..\drivers\etc1\image_etc.h" />
     <ClInclude Include="..\drivers\etc1\rg_etc1.h" />
@@ -965,9 +985,26 @@
     <ClInclude Include="..\drivers\gl_context\GL\wglew.h" />
     <ClInclude Include="..\drivers\jpegd\image_loader_jpegd.h" />
     <ClInclude Include="..\drivers\jpegd\jpgd.h" />
+    <ClInclude Include="..\drivers\mpc\audio_stream_mpc.h" />
+    <ClInclude Include="..\drivers\mpc\datatypes.h" />
+    <ClInclude Include="..\drivers\mpc\decoder.h" />
+    <ClInclude Include="..\drivers\mpc\huffman.h" />
+    <ClInclude Include="..\drivers\mpc\internal.h" />
+    <ClInclude Include="..\drivers\mpc\minimax.h" />
+    <ClInclude Include="..\drivers\mpc\mpcdec.h" />
+    <ClInclude Include="..\drivers\mpc\mpcdec_math.h" />
+    <ClInclude Include="..\drivers\mpc\mpcmath.h" />
+    <ClInclude Include="..\drivers\mpc\mpc_bits_reader.h" />
+    <ClInclude Include="..\drivers\mpc\mpc_types.h" />
+    <ClInclude Include="..\drivers\mpc\reader.h" />
+    <ClInclude Include="..\drivers\mpc\requant.h" />
+    <ClInclude Include="..\drivers\mpc\streaminfo.h" />
     <ClInclude Include="..\drivers\nedmalloc\malloc.c.h" />
     <ClInclude Include="..\drivers\nedmalloc\memory_pool_static_nedmalloc.h" />
     <ClInclude Include="..\drivers\nedmalloc\nedmalloc.h" />
+    <ClInclude Include="..\drivers\ogg\config_types.h" />
+    <ClInclude Include="..\drivers\ogg\ogg.h" />
+    <ClInclude Include="..\drivers\ogg\os_types.h" />
     <ClInclude Include="..\drivers\png\image_loader_png.h" />
     <ClInclude Include="..\drivers\png\png.h" />
     <ClInclude Include="..\drivers\png\pngconf.h" />
@@ -993,6 +1030,9 @@
     <ClInclude Include="..\drivers\pvr\RgbBitmap.h" />
     <ClInclude Include="..\drivers\pvr\texture_loader_pvr.h" />
     <ClInclude Include="..\drivers\register_driver_types.h" />
+    <ClInclude Include="..\drivers\rtaudio\audio_driver_rtaudio.h" />
+    <ClInclude Include="..\drivers\rtaudio\RtAudio.h" />
+    <ClInclude Include="..\drivers\rtaudio\RtError.h" />
     <ClInclude Include="..\drivers\windows\dir_access_windows.h" />
     <ClInclude Include="..\drivers\windows\file_access_windows.h" />
     <ClInclude Include="..\drivers\windows\mutex_windows.h" />
@@ -1449,6 +1489,7 @@
     <None Include="..\drivers\alsa\SCsub" />
     <None Include="..\drivers\builtin_zlib\SCsub" />
     <None Include="..\drivers\chibi\SCsub" />
+    <None Include="..\drivers\convex_decomp\SCsub" />
     <None Include="..\drivers\dds\SCsub" />
     <None Include="..\drivers\etc1\SCsub" />
     <None Include="..\drivers\gles2\SCsub" />
@@ -1460,11 +1501,15 @@
     <None Include="..\drivers\gles2\shaders\SCsub" />
     <None Include="..\drivers\gl_context\SCsub" />
     <None Include="..\drivers\jpegd\SCsub" />
+    <None Include="..\drivers\mpc\SCsub" />
     <None Include="..\drivers\nedmalloc\SCsub" />
+    <None Include="..\drivers\ogg\COPYING" />
+    <None Include="..\drivers\ogg\SCsub" />
     <None Include="..\drivers\png\arm\filter_neon.S" />
     <None Include="..\drivers\png\SCsub" />
     <None Include="..\drivers\pnm\SCsub" />
     <None Include="..\drivers\pvr\SCsub" />
+    <None Include="..\drivers\rtaudio\SCsub" />
     <None Include="..\drivers\SCsub" />
     <None Include="..\drivers\windows\SCsub" />
     <None Include="..\main\SCsub" />
@@ -1520,6 +1565,7 @@
     <None Include="..\tools\addheader\addheader.py" />
     <None Include="..\tools\addheader\files" />
     <None Include="..\tools\bmfhdr\makehdr.py" />
+    <None Include="..\tools\certs\ca-certificates.crt" />
     <None Include="..\tools\collada\SCsub" />
     <None Include="..\tools\docdump\SCsub" />
     <None Include="..\tools\doc\SCsub" />
@@ -1967,6 +2013,9 @@
     <None Include="..\tools\editor\io_plugins\SCsub" />
     <None Include="..\tools\editor\plugins\SCsub" />
     <None Include="..\tools\editor\SCsub" />
+    <None Include="..\tools\glwrapper\makewrapper.py" />
+    <None Include="..\tools\html_fs\godot.html" />
+    <None Include="..\tools\html_fs\godotfs.js" />
     <None Include="..\tools\memsort.py" />
     <None Include="..\tools\pck\SCsub" />
     <None Include="..\tools\scripts\file-hex-array.py" />
@@ -1974,6 +2023,7 @@
     <None Include="..\tools\scripts\sort-demos.sh" />
     <None Include="..\tools\scripts\svgs_2_pngs.py" />
     <None Include="..\tools\SCsub" />
+    <None Include="..\tools\steam\make_icons.sh" />
     <None Include="..\tools\translations\ar.po" />
     <None Include="..\tools\translations\bg.po" />
     <None Include="..\tools\translations\cs.po" />
@@ -3160,6 +3210,15 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\platform\windows\godot_res.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\tools\editor_fonts\DroidSans.ttf" />
+    <Font Include="..\tools\editor_fonts\DroidSansArabic.ttf" />
+    <Font Include="..\tools\editor_fonts\DroidSansFallback.ttf" />
+    <Font Include="..\tools\editor_fonts\DroidSansHebrew.ttf" />
+    <Font Include="..\tools\editor_fonts\DroidSansJapanese.ttf" />
+    <Font Include="..\tools\editor_fonts\DroidSansThai.ttf" />
+    <Font Include="..\tools\editor_fonts\source_code_pro.otf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
