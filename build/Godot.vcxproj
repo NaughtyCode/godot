@@ -87,7 +87,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;DEBUG_MEMORY_ALLOC;SCI_NAMESPACE;ENABLE_DEPRECATED;FREETYPE_ENABLED;PTRCALL_ENABLED;MUSEPACK_ENABLED;SQUISH_ENABLED;VORBIS_ENABLED;OPUS_ENABLED;THEORA_ENABLED;THEORALIB_ENABLED;PNG_ENABLED;DDS_ENABLED;PVR_ENABLED;JPG_ENABLED;WEBP_ENABLED;SPEEX_ENABLED;TOOLS_ENABLED;_D_3D_DISABLED;GDSCRIPT_ENABLED;ADVANCED_GUI_DISABLED;MINIZIP_ENABLED;XML_ENABLED;ETC1_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>.;..;../core;../core/bind;../core/helper;../core/io;../core/math;../core/os;../main;../drivers;../modules;../modules/cscript;../modules/gdscript;../modules/gridmap;../modules/ik;../modules/lua;../platform;../platform/android;../platform/bb10;../platform/haiku;../platform/iphone;../platform/javascript;../platform/osx;../platform/server;../platform/windows;../platform/windows/export;../platform/winrt;../platform/x11;../scene;../scene/2d;../scene/3d;../scene/animation;../scene/audio;../scene/gui;../scene/io;../scene/main;../scene/resources;../scene/resources/efault_theme;../scene/resources/default_theme/source;../servers;../servers/audio;../servers/physic;../servers/physics/joints;../servers/physics_2d;../servers/spatial_sound;../servers/spatial_sound_2d;../servers/visual;../tools;../tools/collada;../tools/doc;../tools/docdump;../tools/pck;../tools/editor;../tools/editor/fileserver;../tools/editor/icons;../tools/editor/icons/2x;../tools/editor/icons/source;../tools/editor/io_plugins;../tools/editor/plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -118,8 +118,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;DEBUG_MEMORY_ALLOC;SCI_NAMESPACE;ENABLE_DEPRECATED;FREETYPE_ENABLED;PTRCALL_ENABLED;MUSEPACK_ENABLED;SQUISH_ENABLED;VORBIS_ENABLED;OPUS_ENABLED;THEORA_ENABLED;THEORALIB_ENABLED;PNG_ENABLED;DDS_ENABLED;PVR_ENABLED;JPG_ENABLED;WEBP_ENABLED;SPEEX_ENABLED;TOOLS_ENABLED;_D_3D_DISABLED;GDSCRIPT_ENABLED;ADVANCED_GUI_DISABLED;MINIZIP_ENABLED;XML_ENABLED;ETC1_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.;..;../core;../core/bind;../core/helper;../core/io;../core/math;../core/os;../main;../drivers;../modules;../modules/cscript;../modules/gdscript;../modules/gridmap;../modules/ik;../modules/lua;../platform;../platform/android;../platform/bb10;../platform/haiku;../platform/iphone;../platform/javascript;../platform/osx;../platform/server;../platform/windows;../platform/windows/export;../platform/winrt;../platform/x11;../scene;../scene/2d;../scene/3d;../scene/animation;../scene/audio;../scene/gui;../scene/io;../scene/main;../scene/resources;../scene/resources/efault_theme;../scene/resources/default_theme/source;../servers;../servers/audio;../servers/physic;../servers/physics/joints;../servers/physics_2d;../servers/spatial_sound;../servers/spatial_sound_2d;../servers/visual;../tools;../tools/collada;../tools/doc;../tools/docdump;../tools/pck;../tools/editor;../tools/editor/fileserver;../tools/editor/icons;../tools/editor/icons/2x;../tools/editor/icons/source;../tools/editor/io_plugins;../tools/editor/plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
